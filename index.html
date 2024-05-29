@@ -1,0 +1,72 @@
+<!--
+
+    Project Name: Concert Ticket Finder
+    Project Description: This app uses the TicketMaster API to look for ticket deals on shows of a band that the user searches for.
+    Date Started: 2024-05-14
+    Date Finished: 
+    
+    -------------------------------------------------------------------------------------------------------------------------------
+
+    Developer Name: Nick McClure
+    Portfolio / Personal Site: https://n-mcclure.github.io/
+    GitHub: https://github.com/N-McClure
+    LinkedIn: https://www.linkedin.com/in/nick-mcclure-578565295/
+    YouTube: https://www.youtube.com/@NickMcClure_ProgrammingGuy
+    Blog: https://n-mcclure004.livejournal.com/
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Concert Ticket Finder</title>
+</head>
+<body>
+
+    <!-- Connection to External CSS File: -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--
+
+        Must Have Features:
+        ===================
+        - Input field for user to search the band/artist they desire.  ==> Done.
+        - Button to Initialize the Event search function.
+        - Area to display the search results.
+        - Clean and Responsive UI (Desktop and Mobile Friendly).
+
+        Notes:
+        ======
+        - Site the API is from: https://app.ticketmaster.com/discovery/v2/
+        - My API Key: SGWzk7825DDCSni6jJBxXC9T2nyEe0cK
+
+    -->
+
+    <!-- Div for the whole app: -->
+    <div class="wrapping">
+
+        <!-- Header for the App Title / Name (Concert Finder): -->
+        <h2>Concert Finder</h2>
+
+        <!-- Form for the User to enter their data into the Input Fields: -->
+        <form action="#">
+
+            <!-- Div for the Artist Input: -->
+            <div class="artistSearch">
+                <input type="text" class="artist" placeholder="Artist or Band to Search for.">
+            </div>
+
+            <!-- Button to trigger the Search Function: -->
+            <button onclick="searchEvents()">Find Events</button>
+
+        </form>
+
+    </div>
+
+    <!-- Connection to External JavaScript File: -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
